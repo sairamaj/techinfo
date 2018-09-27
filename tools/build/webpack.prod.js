@@ -43,7 +43,13 @@ module.exports = {
         context: 'src',
         from: '**/function.json',
         to: ''
+      },
+      {
+        context: 'src',
+        from: 'techinfo/data/**/*.MD',
+        to: ''
       }
+
     ])
   ],
   node: {

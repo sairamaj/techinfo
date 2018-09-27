@@ -1,7 +1,10 @@
+import * as fs from 'fs';
+
 export function run(context: any, req: any): void {
+  const file = `${__dirname}/data/FunctionDeploy.MD`;
   context.res = {
     body : {
-      name: 'sai'
+      data: fs.readFileSync(file, 'utf-8')
     }
   }
 
